@@ -7,25 +7,27 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="py-2">
-      <div className="flex justify-around py-4 bg-black bg-opacity-10">
-        <img src={logo} alt="logo" />
+    <div className="">
+      <div className="flex justify-around py-3 bg-black bg-opacity-10">
+        <Link to={'/'}>
+          <img src={logo} alt="logo" />
+        </Link>
 
         <ul className="flex gap-x-12 items-center text-white">
           <Link to={'/'}> 
-          <li className="pb-2 hover:border-b-4 border-[#c770f0] py-1 focus-within:text-[#cc7060] text-xl items-center flex gap-x-1"><span><GoHome /></span>Home</li>
+          <li className=" hover:border-b-2 rounded-xl border-[#c770f0] p-1 hover:text-[#cc70f0] focus-within:text-[#cc7060] text-xl items-center flex gap-x-1"><span><GoHome /></span>Home</li>
           </Link>
 
           <Link to={"/about"}> 
-          <li className="pb-2 hover:border-b-4 border-[#c770f0] py-1 focus-within:text-[#cc7060] text-xl items-center flex gap-x-1"><span><GoPerson /></span>About</li>
+          <li className=" hover:border-b-2 rounded-xl border-[#c770f0] p-1 hover:text-[#cc70f0] focus-within:text-[#cc7060] text-xl items-center flex gap-x-1"><span><GoPerson /></span>About</li>
           </Link>
 
           <Link to={"/project"}> 
-          <li className="pb-2 hover:border-b-4 border-[#c770f0] py-1 focus-within:text-[#cc7060] text-xl items-center flex gap-x-1"><span><AiOutlineFundProjectionScreen /></span>Project</li>
+          <li className=" hover:border-b-2 rounded-xl border-[#c770f0] p-1 hover:text-[#cc70f0] focus-within:text-[#cc7060] text-xl items-center flex gap-x-1"><span><AiOutlineFundProjectionScreen /></span>Project</li>
           </Link>
 
           <Link to={"/resume"}> 
-          <li className="pb-2 hover:border-b-4 border-[#c770f0] py-1 focus-within:text-[#cc7060] text-xl items-center flex gap-x-1"><span><IoDocumentTextOutline /></span>Resume</li>
+          <li className=" hover:border-b-2 rounded-xl border-[#c770f0] p-1 hover:text-[#cc70f0] focus-within:text-[#cc7060] text-xl items-center flex gap-x-1"><span><IoDocumentTextOutline /></span>Resume</li>
           </Link>
         </ul>
       </div>
